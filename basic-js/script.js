@@ -45,14 +45,9 @@ printNum(100);
 //2
 function currentDay(){
     todayDate = new Date();
-    var dd = todayDate.getDate();
-    var mm = todayDate.getMonth()+1;
+    var dd = String(todayDate.getDate()).padStart(2,'0');
+    var mm = String(todayDate.getMonth()+1).padStart(2,'0');
     var yyyy = todayDate.getFullYear();
-
-    if(dd<10)
-        dd="0"+dd;
-    if(mm<10)
-        mm="0"+mm;
     return (dd+'/'+mm+'/'+yyyy);   
 }
 console.log(currentDay());
