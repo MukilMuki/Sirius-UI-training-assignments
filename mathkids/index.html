@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathkids</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="assets/styles.css"> <!--Importing the css stylesheet-->
+</head>
+
+<body>
+    <header>
+        <p class="app-name">MATH KIDS</p>
+        <p class="app-genre">KIDS LEARNING APP</p>
+    </header>
+    <main>
+        <div id="shape-choosing" class="shape-choosing">  <!--1st Page for Choosing the Shape-->
+            <p class="choice">1. Choose a Shape</p>
+            <div class="shapes">
+                <div class="circle" id="circle-selected" onclick="showTick(event)"><span
+                        class="material-symbols-outlined" id="circle-tick">done</span></div>
+                <div class="triangle" id="triangle-selected" onclick="showTick(event)"><span
+                        class="material-symbols-outlined" id="triangle-tick">done</span></div>
+                <div class="square" id="square-selected" onclick="showTick(event)"><span
+                        class="material-symbols-outlined" id="square-tick">done</span></div>
+            </div>
+            <button class="next-button" id="next-button" onclick="dimensionInput()">Next</button>
+        </div>
+
+        <div id="shape-dimensions" class="shape-dimensions">  <!--2nd Page for Entering the Shape's Dimensions-->
+            <p class="dimension__entry" id="dimension__entry"></p>
+            <input type="number" class="dimension__value" id="dimension__value" />
+            <button class="calculate-button" id="calculate-button" onclick="calculationResult()">Calculate</button>
+        </div>
+
+        <div class="calculation-result" id="calculation-result"> <!--Last Page for Calculation-->
+            <div id="shape__diagram"></div>
+            <p class="shape__type" id="shape__type"></p>
+            <p class="shape__side" id="shape__side"></p>
+            <p class="shape__area" id="shape__area"></p>
+            <p class="shape__perimeter" id="shape__perimeter"></p>
+            <p class="side__formula" id="side__formula"></p>
+            <p class="area__formula" id="area__formula"></p>
+            <p class="perimeter__formula" id="perimeter__formula"></p>
+            <p class="side__value" id="side__value"></p>
+            <p class="area__value" id="area__value"></p>
+            <p class="perimeter__value" id="perimeter__value"></p>
+            <button class="restart-button" id="restart-button" onclick="window.location.reload()">START
+                AGAIN</button>
+        </div>
+    </main>
+    <script src="assets/script.js"></script>
+</body>
+</html>

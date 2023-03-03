@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #000000;
+}
+
+header {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: #aae187;
+    padding: 25px 25px;
+}
+
+.app-genre{
+    position: absolute;
+    right: 30px;
+    top: 26px;
+    font-weight: 700;
+}
+
+.choice {
+    color: #ffffff;
+    font-size: 50px;
+    letter-spacing: 1.8px;
+    font-weight: 400;
+    position: absolute;
+    top: 33%;
+    left: 39%;
+}
+
+.shapes{
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    left:33%;
+    bottom:35%;
+}
+
+.circle {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: #00987c;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 150px solid #ffabdc;
+    margin: 10px 80px;
+}
+
+.square {
+    height: 160px;
+    width: 160px;
+    background-color: #e0e0e0;
+}
+
+.circle:hover,
+.triangle:hover,
+.square:hover,.next-button:hover, .calculate-button, .restart-button {
+    cursor: pointer;
+}
+
+#circle-tick {
+    position: absolute;
+    top: 22%;
+    left: 5%;
+    width: 100px;
+    height: 100px;
+    font-size: 90px;
+    color: #ffffff;
+    display: none;
+}
+
+#triangle-tick {
+    position: absolute;
+    top: 36%;
+    left: 43%;
+    width: 100px;
+    height: 100px;
+    font-size: 90px;
+    color: #ffffff;
+    display: none;
+}
+
+#square-tick {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    width: 100px;
+    height: 100px;
+    font-size: 90px;
+    color: #ffffff;
+    display: none;
+}
+
+.next-button {
+    font-size: 30px;
+    color: #ffffff;
+    padding: 10px 50px;
+    position: absolute;
+    bottom: 20%;
+    left: 46%;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    display: none;
+}
+
+.shape-dimensions {
+    display: none;
+}
+
+.dimension__entry {
+    color: #ffffff;
+    font-size: 55px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 320px;
+}
+
+.dimension__value {
+    width: 775px;
+    height: 100px;
+    font-size: 50px;
+    font-weight: 300;
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    color: #ffffff;
+    position: absolute;
+    left: 30%;
+    bottom: 40%;
+}
+
+input::-webkit-outer-spin-button,       /*To Remove the arrows from input type number*/
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+.calculate-button {
+    color: #ffffff;
+    background-color: #000000;
+    font-size: 25px;
+    border: 1px solid #ffffff;
+    padding: 12px 55px;
+    position: absolute;
+    left: 44%;
+    bottom: 30%;
+}
+
+.calculation-result{
+    color: #ffffff;
+    font-size: 20px;
+    display: none;
+    font-weight: lighter;
+    font-family: 'Roboto Light';
+}
+
+.re-circle {
+    height: 160px;
+    width: 160px;
+    border-radius : 50%;
+    position: absolute;
+    top:22%;
+    left:45.5%;
+    background-color: #00987c;
+}
+
+.re-triangle{
+    width:0;
+    height:0;
+    position: absolute;
+    top:22%;
+    left:41%;
+    border-left: 85px solid transparent;
+    border-right: 85px solid transparent;
+    border-bottom: 165px solid #ffabdc;
+    margin: 10px 75px;
+
+}
+
+.re-square{
+    height: 160px;
+    width: 160px;
+    background-color: #e0e0e0;
+    position: absolute;
+    top:22%;
+    left:45.7%;
+}
+.shape__type {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 360px;
+}
+
+.shape__side {
+    background-color: #0e62d6;
+    position: absolute;
+    left: 36.5%;
+    bottom: 44%;
+    width: 215px;
+    padding: 10px;
+}
+
+.shape__area {
+    background-color: #0e62d6;
+    position: absolute;
+    left:36.5%;
+    bottom: 38%;
+    width: 215px;
+    padding: 10px;
+}
+
+.shape__perimeter {
+    background-color: #0e62d6;
+    width: 215px;
+    padding: 10px;
+    position: absolute;
+    left:36.5%;
+    bottom: 32%;
+}
+
+.side__formula {
+    background-color: #455d7e;
+    width: 130px;
+    position: absolute;
+    left: 48.7%;
+    bottom: 44%;
+    padding: 10px;
+}
+
+.area__formula {
+    background-color: #455d7e;
+    width: 130px;
+    position: absolute;
+    left: 48.7%;
+    bottom: 38%;
+    padding: 10px;
+}
+
+.perimeter__formula {
+    background-color: #455d7e;
+    width: 130px;
+    position: absolute;
+    left: 48.7%;
+    bottom: 32%;
+    padding: 10px;
+}
+
+.side__value {
+    background-color: #3388ff;
+    width: 130px;
+    position: absolute;
+    right: 36.3%;
+    bottom: 44%;
+    padding: 10px;
+}
+
+.area__value {
+    background-color: #3388ff;
+    width: 130px;
+    position: absolute;
+    right:36.3%;
+    bottom: 38%;
+    padding: 10px;
+}
+
+.perimeter__value {
+    background-color: #3388ff;
+    width: 130px;
+    position: absolute;
+    right:36.3%;
+    bottom: 32%;
+    padding: 10px;
+}
+
+.restart-button{
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffff;
+    position: absolute;
+    left: 42.8%;
+    bottom: 20%;
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    padding: 12px 45px;
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url(/assets/fonts/Roboto/Roboto-Light.ttf);
+}
