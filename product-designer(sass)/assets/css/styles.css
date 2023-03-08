@@ -1,0 +1,188 @@
+* { /*Universal Selector*/
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+img { /*Fits image in container and retains its original size*/
+  max-width: 100%;
+}
+
+header { /*Header section styling*/
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80.5%;
+  margin: auto;
+}
+
+.designer-name {
+  margin-top: 55px;
+  font-size: 150px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.last-name {
+  font-weight: bolder;
+}
+
+.designer-info {
+  font-size: 60px;
+  margin-bottom: 75px;
+}
+.designer-info span:nth-child(1), .designer-info span:nth-child(3) {
+  color: #cecece;
+}
+.designer-info span:nth-child(2) {
+  color: #498edf;
+}
+
+.designer-email {
+  padding: 40px;
+  text-align: end;
+  font-size: 29px;
+  font-weight: bold;
+  cursor: pointer;
+} /*Header ends here*/
+.product-section { /*Section containing the product images */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+  padding: 100px 0px;
+}
+.product-section div {
+  width: 30%;
+  padding-bottom: 30px;
+}
+
+.brand-title {
+  font-size: 65px;
+  text-align: center;
+}
+.brand-title span:nth-of-type(1) {
+  color: #cecece;
+}
+.brand-title span:nth-child(2) {
+  color: #b6e785;
+}
+
+.brand-logos { /*Section containing the brand logos */
+  display: flex;
+  align-items: center;
+  padding: 100px 0px 260px;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
+}
+.brand-logos div {
+  width: 10%;
+}
+
+.social-icons { /*Social media icons */
+  margin: 78px 0px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.social-icons div {
+  width: 3%;
+}
+
+.seperator-container {
+  display: flex;
+  justify-content: center;
+}
+
+.left-horizontal-separator {
+  width: 30px;
+  margin-right: 25px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.right-horizontal-separator {
+  width: 152px;
+  border-bottom: 1px solid #ffffff;
+}
+
+footer { /*Footer Section begins here*/
+  text-align: center;
+  margin-bottom: 130px;
+  /*Footer ends here*/
+}
+footer p:last-child {
+  font-size: large;
+  word-spacing: 0;
+}
+
+@media only screen and (max-width: 425px) { /*Making the page responsive to mobile screens starting from width:425px*/
+  header { /*Lowering the header and its content's font size*/
+    width: 90%;
+  }
+  .first-name {
+    font-weight: lighter;
+  }
+  .designer-name {
+    font-size: 43px;
+    margin-top: 200px;
+  }
+  .designer-info {
+    font-size: 25px;
+    margin: 0px;
+  }
+  .designer-email {
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    padding: 10px;
+    order: 3;
+  }
+  .product-section { /*Resizing the product section to fit the screen one image at a time*/
+    width: 90%;
+    padding: 68px 0px 47px;
+  }
+  .product-section div {
+    width: 100%;
+  }
+  .brand-title {
+    font-size: 26px;
+  }
+  .brand-logos { /*Resizing to fit two columns at a time*/
+    padding-bottom: 110px;
+    width: 85%;
+    flex-wrap: wrap;
+  }
+  .brand-logos div {
+    padding: 30px;
+    width: 45%;
+  }
+  .left-horizontal-separator {
+    left: -52px;
+    width: 20px;
+  }
+  .right-horizontal-separator {
+    width: 110px;
+  }
+  .social-icons {
+    margin: 25px 0px;
+  }
+  .social-icons div {
+    width: 100%;
+  }
+  footer { /*Footer Section spacing adjustment*/
+    margin-bottom: 50px;
+  }
+  footer p {
+    font-size: x-small;
+  }
+  footer p:last-child {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
