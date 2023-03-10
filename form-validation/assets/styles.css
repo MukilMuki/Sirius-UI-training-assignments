@@ -1,11 +1,11 @@
-* {
+* {                     /*Universal Selector resetting padding and margin*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-.brand-image {
+.brand-image {      /*Setting the company image on the top using position*/
     width: 16%;
     position: absolute;
     top: -2.5rem;
@@ -16,7 +16,7 @@ body {
     background-color: #f5f5f5;
 }
 
-#banking-form {
+#banking-form {         /*Id of the form*/
     display: flex;
     width: 37%;
     padding: 2.3rem;
@@ -26,17 +26,17 @@ body {
     flex-flow: row wrap;
     border: 1px;
     background-color: #ffffff;
-    box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.1);         /*Box shadow for the special box effect*/
 }
 
-label {
-    display: block;
+label {                     /*Labels for the input fields*/
+    display: block;     
     width: 100%;
     margin-top: 2rem;
 
 }
 
-form input {
+form input {            
     border-radius: 5px;
     border: 0.5px solid #808080;
     width: 100%;
@@ -68,7 +68,7 @@ input::-webkit-outer-spin-button,       /*To Remove the arrows from input type n
     width: 50%;
 }
 
-.btn {
+.btn {              /*Submit Button*/
     width: 100%;
     padding: 0.8rem;
     margin-top: 1.5rem;

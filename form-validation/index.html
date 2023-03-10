@@ -5,18 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/styles.css">    <!--Style sheet import-->
     <title>Form Validation</title>
 </head>
 
 <body>
-    <header>
+    <header>    <!--Header containing the Brand Image-->
         <img src="assets/img/Sirius_CDW_Cobranded_PMS2747.svg" class="brand-image" alt="Sirius Brand Image">
     </header>
     <main>
-
-    <form id="banking-form" action="" method="post" novalidate>
-        <label class="form-section-title">BILLING DETAILS</label>
+    <form id="banking-form" action = "formdata.com" method="POST" novalidate>     <!--Form section-->
+        <label class="form-section-title">BILLING DETAILS</label>       <!--Section Title-->
         <div class="name">
             <label>First Name</label>
             <input type="text" id="first-name">
@@ -29,7 +28,7 @@
         </div>
         <label>Address</label><input type="email" id="email-address">
         <span></span>
-        <label>Contact Number</label><input type="number" id="contact-number" maxlength="10">
+        <label>Contact Number</label><input type="number" id="contact-number" maxlength="10">   <!--Max length limited to ten numbers-->
         <span></span>
         <label>PIN Code</label><input type="password" id="pincode">
         <span></span>
@@ -48,10 +47,10 @@
             <input type="password" id="cvv">
             <span></span>
         </div>
-        <input type="submit" class="btn" value="COMPLETE PAYMENT">
+        <input type="submit" class="btn" value="COMPLETE PAYMENT">  <!--Submit button after completion of the form-->
     </form>
     </main>
-    <script type="text/javascript" src="assets/script.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>     <!--Java Script connection-->
 </body>
 
 </html>
