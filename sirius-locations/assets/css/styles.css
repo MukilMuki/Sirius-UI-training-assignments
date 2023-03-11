@@ -1,4 +1,5 @@
 * {
+    /*Universal Selector*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,39 +7,155 @@
 }
 
 .brand-image {
+    /*Brand Image*/
     width: 16%;
     position: absolute;
     top: -2.5rem;
     right: 45.5rem;
 }
 
+img {
+    /*Set Max width to 100% so the image doesnt overflow*/
+    max-width: 100%;
+}
+
 body {
     background-color: #f5f5f5;
 }
 
-.ui-tabs{
+.ui-tabs {
+    /*Styling the Tabs Widget*/
     padding: 1.8rem;
     margin: auto;
-    margin-top: 12.8rem;
-    width: 45rem;
+    margin-top: 12.5rem;
+    width: 42rem;
     border: 1px;
     background-color: #ffffff;
     box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.1);
 }
 
-.about-us__text{
+#tabs-1 p {
+    margin-bottom: 1rem;
+}
+
+.ui-state-default a {
+    color: #ffffff !important
+}
+
+.ui-tabs .ui-tabs-nav li {
+    margin-right: 0.8rem;
+}
+
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    border: 0px;
+
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.ui-tabs .ui-tabs-nav {
+    margin: 0;
+    padding: .2em .2em 0;
+    margin-top: -4.4rem;
+    background-color: #f5f5f5;
+    border-style: none;
+}
+
+.ui-accordion-content {
+    /*Editing the accordion widget*/
+    margin-bottom: 0.7rem;
+}
+
+.ui-tabs .ui-tabs-panel {
+    display: block;
+    border-width: 0;
+    padding: 1.6rem;
+    padding-bottom: 0;
+    padding-left: 1px;
+    background: none;
+}
+
+.ui-accordion-header .ui-state-active,
+.ui-widget-content .ui-state-default {
+    background-color: #818dba;
+    color: #ffffff;
+}
+
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button-active,
+.ui-button.ui-state-active:hover {
+    background-color: #001c72 !important;
+}
+
+.ui-widget-header .ui-state-default,
+a.ui-button:disabled {
+    background-color: #000000;
+}
+
+#ui-id-1,
+#ui-id-2,
+#ui-id-3 {
+    /*Styling the Button*/
+    padding: 0.6rem 1.8rem;
+    font-size: 13px;
+}
+
+#tabs {
+    padding-bottom: 0;
+}
+
+#tabs-1,
+#tabs-2,
+#tabs-3 {
+    /*Styling the tabs inside*/
+    height: 35rem;
+    padding-right: 0;
+    overflow: scroll;
+}
+
+#tabs-1 {
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+}
+
+.location-row {
+    /*Desgin of each card present in the locations tab*/
+    background-color: #eeeeee;
+    font-size: 0.8rem;
+    padding: 0.7rem 1rem;
+    margin-bottom: 0.6rem;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.location__image {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.location__state {
+    width: 30%;
+}
+
+.location__city {
+    width: 30%;
+}
+
+.location__contact {
+    text-align: end;
+    width: 20%;
+}
+
+.about-us__text {
     font-size: 14px;
     font-weight: 200;
     letter-spacing: 0.5px;
     line-height: 1.3rem;
-}
-.about-us__button, .solutions__button, .locations__button{
-    color:#ffffff;
-    font-size: 0.7rem;
-    font-weight: 700;
-    padding:0.7rem;
-    width: 7.3rem;
-    background-color:#001c72;
-    border-color:transparent;
-    border-radius: 0.4rem;
 }

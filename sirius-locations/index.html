@@ -5,100 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">  <!--Importing JQuery UI components-->
+    <link rel="stylesheet" href="assets/css/styles.css">      <!--Importingg stylesheet-->
     <title>Sirius Locations</title>
 </head>
 
 <body>
     <header>
-        <img src="assets/img/Sirius_CDW_Cobranded_PMS2747.svg" class="brand-image" alt="Sirius Brand Image">
+        <img src="assets/img/Sirius_CDW_Cobranded_PMS2747.svg" class="brand-image" alt="Sirius Brand Image">    <!--Brand image-->
     </header>
 
     <main>
-        <div>
+        <div class="ui-tabs" id="tabs">     <!--Tabs widget-->
             <ul class="buttons">
-                <li class="">Nunc tincidunt</li>
-                <li>Proin dolor</li>
-                <li>Aenean lacinia</li>
+                <li><a href="#tabs-1">ABOUT US</a></li>
+                <li><a href="#tabs-2">SOLUTIONS</a></li>
+                <li><a href="#tabs-3">LOCATIONS</a></li>
             </ul>
-            <div class=""id="tabs-1">
+            <div id="tabs-1">   <!--First Tab-->
                 <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec
                     sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem.
                     Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula
                     eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam
                     molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum.
                     Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                <img src="assets/img/Screenshot 2023-03-09 at 1.48.04 PM.png" alt="placeholder-image">
             </div>
-            <div id="tabs-2">
+            <div id="tabs-2"> <!--Second Tab-->
                 <div id="accordion">
                     <h3 class="accordion__title">Digital Experience</h3>
                     <div>
-                        <p class="accordion__content" id="accordion__content-1"></p>
+                        <p class="accordion__content" id="accordion__content-1">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Non, aperiam sed ducimus officia excepturi, recusandae commodi, id iste
+                            eum quos laborum vitae accusantium dolores ipsum expedita asperiores veniam. Enim, corporis!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, quo ducimus. Culpa
+                            dolor nobis nostrum incidunt at deleniti sapiente unde laudantium eum, voluptatibus quo
+                            beatae distinctio eius, quas, aut et!</p>
                     </div>
                     <h3 class="accordion__title">Quality Assurance</h3>
                     <div>
-                        <p class="accordion__content" id="accordion__content-2"></p>
+                        <p class="accordion__content" id="accordion__content-2">Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. At non fugiat, dolores illo earum quia, cum aut suscipit sed, repudiandae
+                            vitae nulla eius quas perferendis perspiciatis minima fugit ab laboriosam? Lorem ipsum dolor
+                            sit, amet consectetur adipisicing elit. Eaque necessitatibus enim ut alias aperiam! Saepe
+                            aliquam pariatur qui deserunt nihil. Numquam fuga nemo adipisci aut, velit molestiae dolores
+                            deserunt a!</p>
                     </div>
                     <h3 class="accordion__title">Managed Services</h3>
                     <div>
-                        <p class="accordion__content" id="accordion__content-3"></p>
+                        <p class="accordion__content" id="accordion__content-3">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Dolores debitis rerum libero ipsam dolorem quis, sunt maxime laboriosam
+                            neque quibusdam ducimus saepe nam natus unde aspernatur, provident adipisci magni soluta?
+                        </p>
                     </div>
-                    <h3 class="accordion__title">Information technology</h3>
+                    <h3 class="accordion__title">Information</h3>
                     <div>
-                        <p class="accordion__content" id="accordion__content-4"></p>
+                        <p class="accordion__content" id="accordion__content-4">Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Ea non est pariatur iure id maxime ab ipsa officia dolores. Velit tempora
+                            voluptas ut iusto ratione nihil illum! Qui, eligendi. Nostrum.</p>
                     </div>
                 </div>
             </div>
-            <div id="tabs-3">
-                <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel
-                    vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class
-                    aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales.
-                    Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium.
-                    Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-                <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla
-                    facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse
-                    potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor
-                    eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi
-                    lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum
-                    rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus
-                    hendrerit hendrerit.</p>
-            </div>
-        </div>
-        <!-- <button class="about-us__button" id="about-us__button">ABOUT US</button>
-        <button class="solutions__button" id="solutions__button">SOLUTIONS</button>
-        <button class="locations__button" id="locations__button">LOCATIONS</button>
-        <div class="about-us">
-            <p class="about-us__text"></p>
-        </div>
-        <div class="solutions">
-            <div id="accordion">
-                <h3 class="accordion__title"></h3>
-                <div>
-                    <p class="accordion__content" id="accordion__content-1"></p>
-                </div>
-                <h3 class="accordion__title"></h3>
-                <div>
-                    <p  class="accordion__content" id="accordion__content-2"></p>
-                </div>
-                <h3 class="accordion__title"></h3>
-                <div>
-                    <p  class="accordion__content" id="accordion__content-3"></p>
-                </div>
-                <h3 class="accordion__title"></h3>
-                <div>
-                    <p  class="accordion__content" id="accordion__content-4"></p>
+            <div id="tabs-3">   <!--Third Tab-->
+                <div class="locations"> 
                 </div>
             </div>
         </div>
-        <div class="locations" id="locations">
-
-        </div> -->
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
