@@ -58,8 +58,11 @@ posterFile =[
 
 const videoHolder = document.querySelector('.video-container');     //Video Container for the video and its sub contents
 let video= document.createElement('video');
-video.setAttribute('class','video-holder');             
+video.setAttribute('class','video-holder');    
+video.setAttribute('preload','metadata')         
 video.setAttribute('controls', '');
+video.setAttribute('poster','');
+
 let videoResource = document.createElement('source');   //Source for the video 
 videoResource.setAttribute('src',videoFile.videoUrl);      
 video.append(videoResource);
