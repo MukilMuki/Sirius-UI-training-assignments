@@ -4,3 +4,35 @@
     box-sizing: border-box;
     font-family: 'Lato';
 }
+
+header {
+    /*Styling the header*/
+    display: flex;
+    flex-flow: row wrap;
+    position: fixed;
+    width: 100%;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 1rem 17.5rem;
+}
+
+.page-name {
+    margin-right: auto;
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.delete-notes-btn{
+    margin-left: auto;
+    margin-right: 0.5rem;
+    align-self: center;
+    color: #565656;
+    font-size: 0.7rem;
+}
+
+.new-note-btn {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
