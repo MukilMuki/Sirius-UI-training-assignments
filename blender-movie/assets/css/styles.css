@@ -142,6 +142,13 @@ main {
     margin-top: 0.8rem;
 }
 
+.chat-icon{
+    position: fixed;
+    right:2rem;
+    bottom: 10rem;
+    width: 52px;
+}
+
 footer {
     /*Footer section begins here*/
     display: flex;
@@ -175,7 +182,7 @@ footer {
 
     /*Styling for screen sizes 768px and below (Laptop and mobile users)*/
     header {
-        padding: 1.3rem 0.5rem;
+        padding: 1.3rem 0.9rem;
     }
 
     .page-name {
@@ -203,6 +210,15 @@ footer {
 
     .video-group {
         width: 100%;
+    }
+
+    .chat-icon{
+        bottom: 2rem;
+        right:1rem;
+        width: 69px;
+    }
+    .chat-icon:hover{
+        cursor:pointer;
     }
 
     footer {
