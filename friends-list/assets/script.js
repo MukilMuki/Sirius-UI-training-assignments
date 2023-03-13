@@ -6003,7 +6003,7 @@ const friendsList =
 ]
 
 const friend = document.querySelector('.friends-list'); 	//Selecting the main body
-
+const documentFragment = document.createDocumentFragment();
 friendsList.forEach(element => {		//For each loop to traverse the List
 	const friendsCard = document.createElement('div');		
     friendsCard.setAttribute('class','card');		//Card containing the picture and the details
@@ -6027,5 +6027,6 @@ friendsList.forEach(element => {		//For each loop to traverse the List
     friendsEmail.textContent = element.friendsEmail;
     friendsDetails.append(friendsEmail); //Appending the mail to the details
     friendsCard.append(friendsDetails);	//Appending the Details to the card
-    friend.append(friendsCard);		//Appending the card to the main body
+    documentFragment.append(friendsCard);		//Appending the card to the main body
 });
+friend.append(documentFragment);
