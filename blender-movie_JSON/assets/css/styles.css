@@ -149,6 +149,10 @@ main {
     width: 52px;
 }
 
+.chat-icon:hover{
+    cursor: pointer;
+}
+
 footer {
     /*Footer section begins here*/
     display: flex;
