@@ -1,5 +1,6 @@
 $(document).ready(function () {
 const reviewerComments = $(".comments-section");
+const documentFragment= document.createDocumentFragment();
 $.getJSON('/blender-movie_JSON/assets/js/video.json',function(json){
 
         const videoHolder = $("div.video-container");
@@ -32,13 +33,6 @@ $.getJSON('/blender-movie_JSON/assets/js/video.json',function(json){
         movieComments.append(reviewerImage);
         movieComments.append(commentSection);
         
-        reviewerComments.append(movieComments);
-
-        commentSection.append(reviewerName);
-        commentSection.append(reviewerComment);
-    
-        movieComments.append(reviewerImage);
-        movieComments.append(commentSection);
         reviewerComments.append(movieComments);
     });
 });
