@@ -87,6 +87,7 @@ commentTitle.innerText = "Comments";
 commentHeading.append(commentTitle);
 
 const reviewerComments=document.querySelector('.comments-section');
+const documentFragment=document.createDocumentFragment();
 videoFile.comments.forEach(element => {             //For each loop to iterate through the json file
     let movieComments= document = document.createElement('div');            
     movieComments.setAttribute('class','comment-holder');
@@ -119,8 +120,9 @@ commentSection.append(reviewerComment);
 
 movieComments.append(reviewerImage);
 movieComments.append(commentSection);
-reviewerComments.append(movieComments);
+documentFragment.append(movieComments);
 });
+reviewerComments.append(documentFragment);
 
 
 const posterProject= document.querySelector('.upcoming-projects__posters'); //For each loop to iterate through the posters
@@ -129,5 +131,6 @@ posterFile.forEach(element => {
     let poster = document.createElement('img');
     poster.setAttribute('class','poster-image');
     poster.setAttribute('src',element.imageUrl);
-    posterProject.append(poster);
+    documentFragment.append(poster);
 });
+posterProject.append(documentFragment);
